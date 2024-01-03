@@ -36,16 +36,16 @@ const Portfolio = () => {
             github : "https://github.com/UmairWaseef/SpringSecurity-User-Authentication-and-Authorization.git",
             demo : "https://google.com"
         },
-        /*{
+        {
             id : 4,
             Image : p4,
-            title : "Best App",
-            about : "Technology Used : Springboot, Spring Security, JWT",
+            title : "CEM-System(Associated with University Of Moratuwa)",
+            about : "Technology Used : React,Springboot, Spring Security, JWT",
             github : "https://google.com",
             demo : "https://google.com"
         },
         
-        {
+        /*{
             id : 5,
             Image : p5,
             title : "Best App",
@@ -72,15 +72,15 @@ const Portfolio = () => {
     <div className='grid gap-8 lg:gap-14 lg:grid-cols-2'>
         {project.map(({id, Image, title,about, github, demo })=>(
             <div key={id} 
-                className='max-w-lg flex shadow-lg shadow-gray-300 rounded-2xl overflow-hidden'>
+                className='max-w-lg flex shadow-lg shadow-gray-300 rounded-2xl overflow-hidden hover:scale-110'>
 
-                <img src={Image} alt={title} className='w-2/3'  />
+                <img src={Image} alt={title} className='w-2/3 '  />
                 
                 <div className='w-1/3 flex flex-col items-center justify-evenly p-1'>
                     <h2>{title}</h2>
                     <p className=' max-w-xl font-light text-gray-500 mb-10 text-sm md:text-base'>{about}</p>
 
-                    <a  className = 'text-2xl cursor-pointer duration-150 hover:scale-110' href={github} target='_blank' rel='noopener noreferrer'>
+                    <a  className = 'text-3xl cursor-pointer duration-150 hover:scale-110' href={github} target='_blank' rel='noopener noreferrer'>
                         <FaGithub />
                     </a>
 

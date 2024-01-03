@@ -27,9 +27,10 @@ function App() {
         
         <Home />
         <About />
-        <Services />
+        
         <Portfolio />
         <Technologies />
+        <Services />
         
         <Certifications />
         <Contact />
